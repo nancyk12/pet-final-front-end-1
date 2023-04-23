@@ -23,7 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # final
-src/final/App.js
+/src/final
 src/final/components/Navbar.js
 src/final/components/StyledNavbar.js
 src/final/data.js
