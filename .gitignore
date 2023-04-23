@@ -22,7 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# final
+# final/s
 /src/final
 src/final/components/Navbar.js
 src/final/components/StyledNavbar.js

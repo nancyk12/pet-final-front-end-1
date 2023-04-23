@@ -8,7 +8,7 @@ function CardGrid(props) {
 	
 					return (
 		<div>
-			<h1>Adopt one of these loveable pets!</h1>
+			<h1>Adopt one of these loveable pets!222</h1>
 			
 					 
 		</div>
