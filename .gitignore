@@ -21,3 +21,19 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# final
+src/final/App.js
+src/final/components/Navbar.js
+src/final/components/StyledNavbar.js
+src/final/data.js
+src/final/pages/About.js
+src/final/pages/Dashboard.js
+src/final/pages/Error.js
+src/final/pages/Home.js
+src/final/pages/Login.js
+src/final/pages/Products.js
+src/final/pages/ProtectedRoute.js
+src/final/pages/SharedLayout.js
+src/final/pages/SharedProductLayout.js
+src/final/pages/SingleProduct.js
