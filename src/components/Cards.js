@@ -5,7 +5,8 @@ import {Link} from "react-router-dom";
 //import 'bootstrap/dist/css/bootstrap.min.css';
 //import { Card, Row, Col } from "react-bootstrap";
 //import Button from 'react-bootstrap/Button';
-import "./Cards.css";
+//import "./Cards.css";
+import "./Cards2.scss"
 //import "../App.css";
 
 
@@ -19,16 +20,17 @@ return (
 
  
 
-<div className="pet"> 
+<div className="wrapper">  
+<div className="card">
 <div key={animal.id} >
-<div style={{
+{/* <div style={{
 						border: "1px solid",
 						height: "400px",
 						width: "200px",
 						margin: "20px",
             overflow: "hidden",
-					}}>
-  <div className="pet-image-container">
+					}}> */}
+  <div className="card__img">
     <img
       className="pet-image"
         src={
@@ -37,21 +39,21 @@ return (
               alt=""
     />
   </div>
+  <div className="card__body">
     <Link to={"/profile/" + animal.id}>
-      <h3 >{animal.name}</h3>
+      <h3 className="card__title">{animal.name}</h3>
      </Link >
-      <p>Type: {animal.type}</p>
-      <p>{animal.contact.address.city},{animal.contact.address.state} </p>
-      <p>Breed: {animal.breeds.primary}</p>
+      <p className="card__price">{animal.species}</p>
+      <p className="card__description"> {animal.breeds.primary}</p>
+      <p className="card__description">{animal.age}  •  {animal.gender}</p>
       {/* <p>Color: {animal.colors.primary}</p> */}
-      <p>Gender: {animal.gender}</p>
-      <p>Age: {animal.age}</p>
+      <p>{animal.contact.address.city}, {animal.contact.address.state} </p>
       {/* <p>About {animal.name}: {animal.description}</p> */}
-  
+      <button className="card__btn">Pet Profile</button>
   </div>
 </div>   
 </div> 
-
+</div>
 
    
  );};
